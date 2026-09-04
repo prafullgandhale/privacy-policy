@@ -69,9 +69,10 @@
         <h2>3. Advertisements & Third-Party SDKs</h2>
         <p>Our app integrates third-party services provided by Google to support app functionality and serve advertisements:</p>
         <ul>
-            <li><strong>Google AdMob:</strong> Serves banner, interstitial, and rewarded video advertisements. Depending on the user's age determination and consent settings, Google AdMob may process device specs, IP address (for general approximate location), and diagnostic data to deliver appropriate ads. For child users, AdMob operates strictly in non-personalized, child-directed mode.</li>
+            <li><strong>Google AdMob:</strong> Serves banner, interstitial, and rewarded video advertisements. Depending on the user's age determination and consent settings, Google AdMob may process the device's advertising ID, device specs, IP address (for general approximate location), and diagnostic data to deliver and measure ads. For child users, AdMob operates strictly in non-personalized, child-directed mode, and the advertising ID is not used for personalized advertising.</li>
             <li><strong>Google Play Services:</strong> Supports core app integration, security, and performance.</li>
             <li><strong>Google User Messaging Platform (UMP):</strong> Manages GDPR/ePrivacy consent requests for European Economic Area (EEA) and UK users.</li>
+            <li><strong>Firebase Crashlytics:</strong> Automatically collects crash reports and diagnostic data (such as device model, manufacturer, OS version, app version, and a Firebase installation identifier) to help us identify and fix technical issues. This data is used solely for stability and performance monitoring and is not used for advertising.</li>
         </ul>
 
         <h2>4. Local Device Storage (SharedPreferences)</h2>
